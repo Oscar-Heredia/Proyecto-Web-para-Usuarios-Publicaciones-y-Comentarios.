@@ -20,7 +20,7 @@ const btnDatos = document.getElementById("btnDatos");
     .then((response) => response.json())
     .then((json) => {
       let datos = '';
-        datos = `<div id="datosUsuario">
+        datos = `<div id="datosUsuario"  class="colortitulos">
           <p>name: ${json.name}</p>
           <p>username: ${json.username}</p>
           <p>email: ${json.email}</p>
