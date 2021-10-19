@@ -1,0 +1,73 @@
+.btn {
+    color: #012f3f;
+    background: transparent;
+    border: 2px solid #023141;
+    border-radius: 6px;
+    border: none;
+    color: black;
+      padding: 16px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+}
+
+.botonesfijs{
+    background: #bdf0fa;
+    color: #0c92ac; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.colorinformacion {
+    background: #bdf0fa; 
+    color: #0c92ac; 
+    font-weight: bold; 
+    padding: 15px; 
+    border: 2px solid #abecf9; 
+    border-radius: 6px;
+    width: 30%;
+  }
+
+.colortitulos{
+    background: #e2fdf4; 
+    color: #0ebd84; 
+    font-weight: bold; 
+    padding: 15px; 
+    border: 2px solid #bdfae6; 
+    border-radius: 6px;
+    width: 30%;
+}
+
+.colorcomentarios{
+    color: #a2a2a2; 
+    font-weight: bold; 
+    padding: 15px; 
+    border: 2px solid #d8d8d8; 
+    border-radius: 6px;
+    width: 30%;
+
+}
+
+.colortituloscomentarios{
+    background: #fcdbe6; 
+    color: #f15c8e; 
+    font-weight: bold; 
+    padding: 15px; 
+    border: 2px solid #fac9d9; 
+    border-radius: 6px;
+    width: 30%;
+}
