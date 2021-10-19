@@ -12,6 +12,32 @@ const btnAdd = document.getElementById("btnCargar");
   });
 });
 
+const btnDatos = document.getElementById("btnDatos");
+  btnDatos.addEventListener("click",()=>{
+    const divdatosautor = document.getElementById("datosAutor");
+    let id = document.getElementById("users").value;
+    fetch('https://jsonplaceholder.typicode.com/users/'+id)
+    .then((response) => response.json())
+    .then((json) => {
+      let datos = '';
+        datos = `<div id="datosUsuario">
+          <p>name: ${json.name}</p>
+          <p>username: ${json.username}</p>
+          <p>email: ${json.email}</p>
+          <p>address: ${json.address.street}</p>
+          <p>phone: ${json.phone}</p>
+          <button type="button" class='botonesfijs' onclick="eliminarDatosdeUsuario()">Eliminar</button>
+      </div>`;
+    divdatosautor.innerHTML = datos;
+  });
+});
+
+function eliminarDatosdeUsuario (){
+  let quitar = document.getElementById("datosAutor");
+  quitar.innerHTML = "";
+};
+
+
 
 const menuUser = document.getElementById("users");
   menuUser.addEventListener("change",()=>{
